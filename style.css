@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Digital, monospace;
+}
+
+@font-face {
+    font-family: Digital;
+    src: url("/fonts/Digital.ttf");
+}
+
+#main-window {
+    background: #aaa;
+    padding: 1rem;
+    border: 5px outset;
+    width: 292px;
+    height: 378px;
+}
+
+.window {
+    background: #aaa;
+    border: 5px inset;
+}
+
+#metadata-window {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-output {
+    position: relative;
+    font-size: 2rem;
+    color: #f00;
+    background: #222;
+    border: 3px black inset;
+    letter-spacing: -6px;
+    padding-right: 6px;
+    padding-top: 4px;
+}
+
+.number-output::before {
+    content: "888";
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: rgba(255, 0, 0, .5);
+}
+
+#action-button {
+    width: 45px;
+    font-size: 2rem;
+    background: #aaa;
+    border: 3px outset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 3px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .1s all ease-in-out;
+}
+
+#action-button:hover, .block:hover {
+    cursor: pointer;
+    background: #a4a4a4;
+}
+
+#action-button:active, .block:active {
+    border: 3px inset;
+}
+
+#game-window {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 24px;
+    height: 24px;
+    background: #aaa;
+    border: 3px outset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 3px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.hole {
+    width: 24px;
+    height: 24px;
+    background: #aaa;
+    border: 3px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 3px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+}
