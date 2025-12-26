@@ -43,9 +43,7 @@
 .number-output::before {
     content: "888";
     position: absolute;
-    left: 0;
-    right: 0;
-    color: rgba(255, 0, 0, .5);
+    color: rgba(255, 0, 0, .3);
 }
 
 #action-button {
